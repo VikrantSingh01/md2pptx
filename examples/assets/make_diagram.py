@@ -60,7 +60,7 @@ def main() -> None:
 
     # Global router
     _rounded(d, (80, 170, 1520, 270), 18, NAVY)
-    _centered(d, (80, 170, 1520, 270), "Global Router  —  deterministic user -> cell mapping",
+    _centered(d, (80, 170, 1520, 270), "Global Router  -  deterministic user -> cell mapping",
               label_f, (255, 255, 255))
 
     # Cells

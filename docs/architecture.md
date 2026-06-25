@@ -27,11 +27,11 @@ the two halves.
 
 Keeping a `python-pptx`-free IR in the middle buys three things:
 
-1. **Testability** — the parser is pure data-in/data-out, so its tests need no
+1. **Testability** - the parser is pure data-in/data-out, so its tests need no
    PowerPoint at all and run in milliseconds.
-2. **Restyleability** — all visual decisions live in `renderer.py` + `themes.py`.
+2. **Restyleability** - all visual decisions live in `renderer.py` + `themes.py`.
    You can completely change the look without touching parsing.
-3. **Reuse** — the same IR could feed a different backend (HTML, PDF) later.
+3. **Reuse** - the same IR could feed a different backend (HTML, PDF) later.
 
 ## Slide classification
 
@@ -49,6 +49,6 @@ consistent, leadership-grade spacing and typography across themes.
 
 ## Extending
 
-- **New theme** — add a `Theme` in `themes.py` via `_register(...)`.
-- **New block type** — add a dataclass to `model.py`, parse it in `parser.py`,
+- **New theme** - add a `Theme` in `themes.py` via `_register(...)`.
+- **New block type** - add a dataclass to `model.py`, parse it in `parser.py`,
   and render it in `renderer.py`. The three changes are independent and small.

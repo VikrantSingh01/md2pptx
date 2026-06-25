@@ -1,4 +1,4 @@
-"""``md2pptx`` — turn Markdown into leadership-grade PowerPoint decks."""
+"""``md2pptx`` - turn Markdown into leadership-grade PowerPoint decks."""
 
 from __future__ import annotations
 

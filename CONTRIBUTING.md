@@ -13,8 +13,8 @@ pip install -e ".[dev]"
 
 ## Before you open a PR
 
-- `ruff check src tests` — lint must pass.
-- `pytest -q` — all tests must pass.
+- `ruff check src tests` - lint must pass.
+- `pytest -q` - all tests must pass.
 - Add or update tests for any behaviour change.
 - Keep the parser free of `python-pptx` imports (see
   [docs/architecture.md](docs/architecture.md)).

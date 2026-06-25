@@ -1,11 +1,11 @@
-# md2pptx — Markdown → leadership-grade PowerPoint
+# md2pptx - Markdown → leadership-grade PowerPoint
 
 [![CI](https://github.com/VikrantSingh01/md2pptx/actions/workflows/ci.yml/badge.svg)](https://github.com/VikrantSingh01/md2pptx/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Built with python-pptx](https://img.shields.io/badge/built%20with-python--pptx-orange.svg)](https://python-pptx.readthedocs.io/)
 
-Write your deck in **Markdown**. Get a polished, executive-ready **`.pptx`** —
+Write your deck in **Markdown**. Get a polished, executive-ready **`.pptx`** -
 real PowerPoint shapes, real themes, real speaker notes. No templates to wrestle,
 no copy-paste, fully scriptable and diff-friendly.
 
@@ -28,16 +28,16 @@ md2pptx examples/leadership-demo.md -o quarterly-review.pptx
 
 Most "markdown to slides" tools render to HTML. Leadership reviews still run on
 PowerPoint. `md2pptx` produces a **native `.pptx`** you can open, tweak, and
-present in PowerPoint or Keynote — while keeping the *source of truth* in plain
+present in PowerPoint or Keynote - while keeping the *source of truth* in plain
 text you can version-control and review in a PR.
 
-- **Leadership-grade by default** — opinionated typography, spacing, and accent
+- **Leadership-grade by default** - opinionated typography, spacing, and accent
   rules tuned for executive decks, not developer slideware.
-- **One source, many decks** — concatenate multiple `.md` files into one deck.
-- **Themeable** — three built-in professional themes; add your own in ~20 lines.
-- **Speaker notes, tables, code, images, quotes, two-column layouts** — all from
+- **One source, many decks** - concatenate multiple `.md` files into one deck.
+- **Themeable** - three built-in professional themes; add your own in ~20 lines.
+- **Speaker notes, tables, code, images, quotes, two-column layouts** - all from
   ordinary Markdown.
-- **Tested & dependency-light** — one runtime dependency (`python-pptx`).
+- **Tested & dependency-light** - one runtime dependency (`python-pptx`).
 
 ## Install
 
@@ -79,11 +79,11 @@ build(["intro.md", "body.md"], "out.pptx", theme="executive")
 
 ```markdown
 ---
-title: Project Aurora — FY26 Strategy Review
+title: Project Aurora - FY26 Strategy Review
 subtitle: Scaling the platform to 10M daily active users
 author: Vikrant Singh
 date: Q1 FY26
-footer: Confidential — Leadership Review
+footer: Confidential - Leadership Review
 theme: executive        # executive | midnight | slate
 ---
 ```
@@ -119,7 +119,7 @@ full-bleed brand layouts. The plain line of text becomes the heading.
 | DAU | 3.1M | 10M |
 
 > The best architecture lets a small team move fast for years.
-> — Engineering Tenets
+> - Engineering Tenets
 
 ![Architecture diagram](assets/architecture.png)
 ```
@@ -192,4 +192,4 @@ md2pptx examples/leadership-demo.md -o out/leadership-demo.pptx
 
 ## License
 
-MIT © Vikrant Singh — see [LICENSE](LICENSE).
+MIT © Vikrant Singh - see [LICENSE](LICENSE).

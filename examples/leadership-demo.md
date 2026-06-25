@@ -1,9 +1,9 @@
 ---
-title: Project Aurora — FY26 Strategy Review
+title: Project Aurora - FY26 Strategy Review
 subtitle: Scaling the platform to 10M daily active users
 author: Vikrant Singh, Engineering Leadership
 date: Q1 FY26
-footer: Aurora · Confidential — Leadership Review
+footer: Aurora · Confidential - Leadership Review
 theme: executive
 ---
 
@@ -69,8 +69,8 @@ What we need to decide
 The current architecture will hit a hard ceiling at roughly **6M DAU**.
 Re-platforming the data tier removes that ceiling and unlocks the latency target.
 
-- **Option A** — Incremental sharding. Lower risk, caps out at ~7M DAU.
-- **Option B** — Re-platform to a cell-based architecture. Higher upfront cost, scales past 25M DAU.
+- **Option A** - Incremental sharding. Lower risk, caps out at ~7M DAU.
+- **Option B** - Re-platform to a cell-based architecture. Higher upfront cost, scales past 25M DAU.
 - Recommendation: **Option B**, phased over three quarters.
 
 ---
@@ -78,7 +78,7 @@ Re-platforming the data tier removes that ceiling and unlocks the latency target
 ## A principle we keep coming back to
 
 > The best architecture is the one that lets a small team move fast for years without rewrites.
-> — Aurora Engineering Tenets
+> - Aurora Engineering Tenets
 
 ---
 
@@ -99,7 +99,7 @@ def route_request(user_id: str) -> Cell:
 
 - Each cell is fully isolated: its own data, queues, and capacity
 - A bad deploy can only ever affect **one** cell
-- Cells are added without downtime — capacity becomes a config change
+- Cells are added without downtime - capacity becomes a config change
 
 ---
 
@@ -115,4 +115,4 @@ def route_request(user_id: str) -> Cell:
 <!-- class: closing -->
 
 # Thank you
-## Questions, challenges, and decisions — let's discuss
+## Questions, challenges, and decisions - let's discuss

@@ -55,7 +55,7 @@ def test_table_parsing():
 
 
 def test_quote_slide_detection():
-    md = "## Q\n\n> Stay hungry\n> — Steve"
+    md = "## Q\n\n> Stay hungry\n> - Steve"
     slide = parse_markdown("---\ntheme: executive\n---\n\n# Title\n\n---\n\n" + md).slides[1]
     assert slide.kind == SlideKind.QUOTE
     assert slide.quote.text == "Stay hungry"

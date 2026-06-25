@@ -5,7 +5,7 @@ deliberately data-only so they are easy to read, tweak and add to. All colours
 are RGB hex strings; the renderer converts them to ``python-pptx`` types.
 
 Design intent: clean, executive, high-contrast typography with generous white
-space — the kind of deck you would show to a leadership team.
+space - the kind of deck you would show to a leadership team.
 """
 
 from __future__ import annotations

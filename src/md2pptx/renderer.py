@@ -2,7 +2,7 @@
 
 The renderer drives every slide off the blank layout and positions shapes by
 hand. That is more work than relying on placeholders, but it gives pixel-level
-control over typography, spacing and accent rules — which is what separates a
+control over typography, spacing and accent rules - which is what separates a
 "markdown dump" from a leadership-grade deck.
 """
 
@@ -156,7 +156,7 @@ class Renderer:
                        italic=True, line_spacing=1.15)
         if q.attribution:
             attr = self._textbox(s, self.m, Inches(5.7), Inches(11.0), Inches(0.6))
-            self._set_text(attr, f"\u2014 {q.attribution}", self.theme.body_size,
+            self._set_text(attr, f"- {q.attribution}", self.theme.body_size,
                            pal.secondary, bold=True)
 
     def _image_slide(self, s, slide: Slide) -> None:

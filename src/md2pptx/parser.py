@@ -242,8 +242,8 @@ def _parse_blocks(lines: list[str], slide: Slide, base_dir: Path | None) -> None
             attribution = ""
             while i < n and lines[i].strip().startswith(">"):
                 q = lines[i].strip()[1:].strip()
-                if q.startswith("—") or q.startswith("--"):
-                    attribution = q.lstrip("—-").strip()
+                if q.startswith("-"):
+                    attribution = q.lstrip("-").strip()
                 else:
                     quote_lines.append(q)
                 i += 1
